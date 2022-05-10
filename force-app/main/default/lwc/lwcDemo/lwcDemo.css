@@ -1,0 +1,51 @@
+h2{
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    color: white;
+    
+}
+
+input[type=email] {
+    border: 1px solid white;
+    border-radius: 6px;
+    width: 25%;
+    color:white;
+  }
+
+  input[type=password] {
+    border: 1px solid white;
+    border-radius: 6px;
+    width: 25%;
+    color:white;
+  }
+
+ .slds-p-around_medium{
+     
+     width:40%;
+     margin-left: 30%;
+     height: auto;
+     
+     
+ }
+
+ .textinput{
+    -webkit-text-fill-color: white;
+}
+
+ .container{
+    background-color: #170845;
+    margin: 50px 250px 10px 250px;  
+ }
+
+ .slds-p-around_large{
+    background-color: #170845;
+    margin: 50px 250px 10px 250px;  
+ }
+ 
+ .slds-m-top_medium{
+    background-color: #170845;
+    height: auto;
+    width: auto;
+    margin-top : 0%;
+ }

@@ -1,0 +1,108 @@
+h1{font-family:Serif;
+    font-size:20px;
+    text-align: left;
+    color:black;
+}
+h2{
+    text-align: center;
+    color:#19b394;
+    font-family:Serif;
+    font-size:30px;
+}
+
+*{
+    font-family: serif;
+    list-style: none;
+    padding: 0;
+}
+
+body{
+    background : white;
+}
+
+.skills{
+    width: 800px;
+    margin: 60px 60px 60px 200px;
+    color : black;
+}
+
+.skills li {
+    margin :20px 0;
+
+}
+
+.bar{
+         background: white;
+         display: block;
+         height: 15px;
+         border: 1px solid rgba(0,0,0,0.3);
+         border-radius: 3px;
+         overflow: hidden;
+        
+}
+
+
+
+.bar span{
+    height: 15px;
+    float : left;
+    background: #1dcca9;
+}
+
+
+
+.java{
+    width:70%;
+}
+
+.apex{
+    width:40%;
+}
+
+.c{
+    width:60%;
+}
+
+.cplus{
+    width:40%;
+}
+
+.html{
+    width:70%;
+}
+
+.css{
+    width:60%;
+}
+
+.lwc{
+    width:45%;
+}
+
+.jscript{
+    width: 30%;
+}
+
+.sql{
+    width:40%;
+
+}
+
+.soql{
+    width:50%;
+}
+
+.vscode{
+    width:60%;
+}
+
+.eclipse{
+    width:70%;
+}
+
+.excloud{
+    width:50%;
+}
+.sforce{
+   width:70%;
+}

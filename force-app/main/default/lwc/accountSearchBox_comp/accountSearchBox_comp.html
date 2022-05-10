@@ -1,0 +1,83 @@
+<template>
+
+    <div>
+       
+    <lightning-input type="search" onchange={handleValueChange} value={searchKey} class="slds-m-bottom_large" ></lightning-input>
+       
+    <template if:true={searchKey}>
+    
+        <template for:each={accList} for:item="accountObj" for:index="index">
+           
+            
+            <ul key={accountObj.id} class="slds-listbox slds-listbox_vertical" role="presentation">
+            <li key={accountObj.id} onclick={onRecordSelection} role="presentation" class="slds-listbox__item">
+                <div id={accountObj.id} class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                <span class="slds-media__figure slds-listbox__option-icon">
+                <span class="slds-icon_container slds-icon-standard-account">
+                    <lightning-icon icon-name="standard:account" size="small"></lightning-icon>
+                </span>
+                </span>
+                <span class="slds-media__body">
+                <span class="slds-listbox__option-text slds-listbox__option-text_entity">
+                    <p key={accountObj.Id}> <a data-accountid= {accountObj.Id} href="#" key={accountObj.Id} onclick={handleIdClick}>{accountObj.Name}</a> </p>
+                </span>
+                </span> 
+                </div>
+                </li>
+            </ul>
+        
+            
+        </template>
+
+
+</template>
+</div>  
+    
+
+</template>
+
+<!--
+<template>
+    <lightning-card>
+        <div class="slds-p-horizontal_small">
+            <div class="row">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-combobox_container">
+                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false"
+                                aria-haspopup="listbox" role="combobox">
+                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+                                    role="none">
+                                    <lightning-input type="search" id="combobox-id-16" value={accountName}
+                                        onchange={searchHandleKeyChange} onkeydown={searchHandleClick} onclick={searchHandleClick}
+                                        onblur={searchHandleClick} aria-activedescendant="option1" label='Account'
+                                        aria-autocomplete="list" aria-controls="listbox-id-12" role="textbox"
+                                        placeholder="Search..."></lightning-input>   
+                                </div>
+                                
+                                <div if:true={messageResult}>
+                                    No Result Found!
+                                </div>
+                                <template if:true={showSearchedValues}>
+                                    <div class="slds-box" style="height: 130px; overflow-y: scroll;">
+                                        <ul class="" role="">
+                                            <template for:each={accountList} for:item="actObj">
+                                                <li class="slds-p-around_x-small" style="cursor: pointer;" key={actObj.Id}
+                                                    onclick={parentHandleAction} data-value={actObj.Id}
+                                                    data-label={actObj.Name}>
+                                                    {actObj.Name}
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </lightning-card>  
+</template>-->

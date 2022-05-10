@@ -1,0 +1,31 @@
+<apex:page standardStylesheets="true" lightningStylesheets="true"  standardController="Account">
+    
+<apex:slds />
+<apex:form >
+
+<apex:pageBlock title="Related Contacts">
+    
+  <apex:pageBlockTable value="{!account}" var="con">
+<apex:column headerValue="Account Name">   
+<apex:inputField value="{!con.Name}"/>
+</apex:column> 
+
+<apex:column headerValue="Phone">   
+<apex:inputField value="{!con.Phone}"/>
+</apex:column>       
+ 
+<apex:column >   
+<apex:commandButton value="Add" styleClass="slds-button slds-button_brand"/>
+</apex:column>   
+      
+      
+<apex:column >   
+<apex:commandButton value="Remove" styleClass="slds-button slds-button_destructive"/>
+</apex:column>         
+
+</apex:pageBlockTable> 
+</apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

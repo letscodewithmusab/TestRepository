@@ -1,0 +1,182 @@
+h1 {
+    font-size: xx-large;
+    text-align : center;
+}
+
+h2{
+    text-align : center;
+    background-color: #63615c;
+    color:white;
+    padding : 5px;
+}
+
+p{
+    text-align : center;
+}
+
+.div0{
+    border: 2px outset rgb(7, 7, 7);
+    margin:5px;
+}
+
+
+.div1 {
+    
+    margin: 0px 5px 15px 20px;  
+    padding : 5px;
+    
+  }
+
+  .div2 {
+    
+    margin: 0px 5px 15px 20px;  
+    padding : 5px;
+    display:flex;
+    
+  }
+
+  .bname{
+      color:#a3170d;
+  }
+
+  .div2a {
+    flex:1;
+    width:50%;
+    
+}  
+
+.div2b {
+    flex:2;
+  width:50%;
+}  
+
+.check{
+     margin-left:60px;
+     margin-top:8px;
+}
+ 
+
+
+  .div3 {
+     display:flex;
+     margin: 0px 5px 15px 20px;  
+     padding : 5px;
+     width:60%; 
+  }
+
+  .div4{
+    display:flex;
+    margin: 0px 5px 15px 20px;  
+    padding : 5px;
+    width:1200px; 
+  }
+
+  .div5{
+    display:flex;
+    margin: 0px 5px 15px 20px;  
+    padding : 5px;
+    width:1200px;
+  }
+
+  .div7{
+    display:flex;
+    margin: 0px 5px 15px 20px;  
+    padding : 5px;
+    width:1200px;
+  }
+
+  .desc{
+    flex:1;
+  }
+
+  .fileType{
+      flex:2;
+      margin-left:40px;
+    
+  }
+
+  .webEmail{
+      flex:1;
+      width:700px;
+  }
+
+  .refferral{
+    flex:2;
+    width:500px;
+}
+
+  .cname1{
+    flex:1;
+    width:400px;
+    
+  }
+
+  .cname2{
+    flex:2;
+    width:400px;
+    
+  }
+
+  .cname3{
+    flex:2;
+    width:400px;
+  }
+
+  .citydiv{
+   flex:1;
+   width:20%
+  }
+
+  .citydiv{
+    flex :2;
+    width:20%
+   }
+
+   .citydiv{
+    flex :3;
+    width:20%
+   }
+  
+
+  input[type=text], select {
+    width: 75%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  input[type=text2], select {
+    width: 300px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  input[type=text3], select {
+    width: 500px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  input[type=phone]{
+    width: 300px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  
+
+  
+
+  .bname.input[type=text]{
+      color:#910608;
+  }
+
+  textarea{
+    padding: 8px 10px;
+  }

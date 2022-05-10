@@ -1,0 +1,38 @@
+.title{
+
+    font-family: serif;
+    font-size:30px;
+    text-align: center;
+    color:#3b473e;
+    margin-top: 40px;
+}
+
+p{
+   
+    font-family:Serif;
+    font-size:20px;
+    color:#3b473e;
+}
+
+.container{
+    
+        margin-right: 10px;
+        padding-top:5%;
+        text-align: center;
+        line-height: 1.6;
+        
+}
+
+.button{
+border-radius: 4px;
+  background-color: #3b473e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 100px;
+  
+  cursor: pointer;
+  margin: 5px;
+}

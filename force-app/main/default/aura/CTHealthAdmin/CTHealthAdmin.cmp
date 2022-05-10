@@ -1,0 +1,21 @@
+<aura:component implements="force:appHostable">
+    <div class="container">
+<lightning:layout multipleRows="true">
+    <lightning:layoutItem size="12">
+      <c:CTHealthHeader/>
+</lightning:layoutItem>
+
+<lightning:layoutItem size="12">
+    <lightning:tabset variant="vertical">
+        <lightning:tab label="Person View" Id="person_view">
+            Person View
+        </lightning:tab>
+        <lightning:tab label="Location View" Id="location_view">
+            Location View
+        </lightning:tab>
+        
+    </lightning:tabset>
+</lightning:layoutItem>
+</lightning:layout>
+</div>
+    </aura:component>

@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access ="global">
+    <aura:attribute name="recordId" type="String"/>
+    
+    <c:hotel_comp recordId = "{!v.recordId}"></c:hotel_comp>
+   
+</aura:component>

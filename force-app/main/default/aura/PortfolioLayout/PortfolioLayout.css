@@ -1,0 +1,64 @@
+.THIS .content{
+    width: 100% !important;
+    overflow :hidden !important;
+    }
+.THIS h1{
+
+    font-family:Serif;
+    font-size:35px;
+    text-align:center;
+    margin-top:40px;
+    color:black;
+}
+
+.THIS .div{
+
+    display:inline-flex;
+}
+.THIS .container{
+
+    
+    width:70%;
+    margin-left:180px;
+    margin-top:50px;
+    
+}
+
+.THIS .div_a{
+    margin-left:10px;
+    margin-top:0px;
+    width:25%;
+}
+
+   
+
+.THIS ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
+  .THIS li {
+    display: inline;
+    
+    margin-left:40px;
+    font-family: cursive;
+    font-size: 20px;
+  }
+
+  .THIS a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .THIS a:visited{
+    color: black;
+  }
+
+  .THIS a:hover{
+    color: rgb(23, 151, 11);
+    text-decoration: underline;
+  }

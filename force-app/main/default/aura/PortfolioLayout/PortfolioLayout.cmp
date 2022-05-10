@@ -1,0 +1,41 @@
+<aura:component implements="forceCommunity:themeLayout">
+<aura:attribute name="search" type="Aura.Component[]"/>
+<aura:attribute name="maincontent" type="Aura.Component[]"/>
+<aura:attribute name="main" type="Aura.Component[]"/>
+<aura:attribute name="sidebarFooter" type="Aura.Component[]"/>
+
+
+    <div class="slds-grid slds-grid--align-center">
+     <div class="slds-col">   
+        <div class="div">
+
+     <div class="div_a">
+
+    <h1><b>MOHD MUSAB</b></h1>
+
+     </div>  
+
+  <div class="container">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="/musabHelpCenter/s/about">About</a></li>
+        <li><a href="/musabHelpCenter/s/education">Education</a></li>
+        <li><a href="/musabHelpCenter/s/skills">Skills</a></li>
+        <li><a href="#certification">Certification</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="/musabHelpCenter/s/contact">Contact</a></li>
+        
+      </ul>
+    
+
+
+  </div>
+    </div>
+        </div>  
+
+    </div>
+<div class="slds-col content">
+{!v.main}
+</div>
+
+</aura:component>

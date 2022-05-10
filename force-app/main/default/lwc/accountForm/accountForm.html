@@ -1,0 +1,36 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Accounts" icon-name="standard:account">
+
+    
+        <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                        <lightning-input type="text" class="inputCmp" label="Account Name" required="true" ></lightning-input>
+                </lightning-layout-item>
+        
+                <lightning-layout-item padding="around-small">
+                    <lightning-input type="date"  label="SLAExpirationDate" ></lightning-input>
+            </lightning-layout-item>  
+            </lightning-layout>
+        
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                    <lightning-input type="text" label="Phone" ></lightning-input>
+            </lightning-layout-item>  
+        
+                <lightning-layout-item padding="around-small">
+                    <lightning-combobox
+                    name="progress"
+                    label="Rating"
+                    value={value}
+                    placeholder="Select Rating"
+                    options={options}
+                    style="width:192px;"
+                    ></lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+        
+            </div>
+        
+        </lightning-card>
+</template>

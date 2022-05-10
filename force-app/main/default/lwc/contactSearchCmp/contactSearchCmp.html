@@ -1,0 +1,38 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Contact Search Box" icon-name="standard:contact">
+
+        <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+<lightning-layout>
+<lightning-layout-item flexibility="auto" padding="around-small">
+    
+    <lightning-input type="search" onchange={handleValueChange} class="slds-m-bottom_small" label="Find Contacts"></lightning-input>
+
+</lightning-layout-item>
+
+</lightning-layout>
+
+    <template if:true={searchKey}>
+    <lightning-layout vertical-align="center" >
+    <lightning-layout-item>
+    <lightning-datatable 
+        key-field="Id"
+        data={data}
+        columns={Contact_columns}
+        sorted-by={sortBy}
+        sorted-direction={sortDirection}
+        onsort={doSorting}
+        onrowaction={handleRowAction}
+        hide-checkbox-column="true"> </lightning-datatable>
+
+    </lightning-layout-item>
+    </lightning-layout>
+    <div class="slds-m-top_small slds-m-left_xx-small">
+        <lightning-button variant="brand" label="Previous" title="prev" disabled={disablePrevious} onclick={previousHandler} class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="brand" label="Next" title="next" disabled={disableNext} onclick={nextHandler} class="slds-m-left_x-small"></lightning-button>
+    </div>
+</template>
+<template if:false={data}><p>No Records Found</p></template>
+</div>
+    
+</lightning-card>
+</template>

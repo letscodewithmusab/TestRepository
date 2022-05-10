@@ -1,0 +1,74 @@
+<template>
+    <hr>
+    <div class="title">
+        <h1><b>Follow me</b></h1>
+
+    </div>
+
+    <div class="slds-grid slds-gutters">
+
+    <div class="slds-col"> 
+        <a href="https://www.linkedin.com/in/mohd-musab-307a69172/"> 
+    <img class="animated-gif" src={logol}>
+     </a>
+    <div class="grad">
+        <p><b>LINKEDIN</b></p>
+    </div>
+    </div>
+
+    <div class="slds-col">
+        <a href="https://www.facebook.com/mohd.musab000">
+        <img class="animated-gif" src={logof}>
+    </a>
+        <div class="grad">
+            <p><b>FACEBOOK</b></p>
+        </div>
+    </div>
+
+    <div class="slds-col">
+        <a href="https://www.instagram.com/iam_musab">
+            <img class="animated-gif" src={logoi}>
+        </a>
+            <div class="grad">
+                <p><b>INSTAGRAM</b></p>
+            </div>
+    </div>    
+
+    
+    
+
+
+    </div><br><br>
+
+
+    <div class="title">
+        <h1><b>Send me a mail</b></h1>
+
+    </div><br>
+    <div class="container">
+
+      
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type="hidden" name="oid" value="00D2v0000013ye7" />
+            <input type="hidden" name="retURL" value="http://www.google.com" />
+    
+            
+    
+            
+            <input id="first_name" placeholder="First Name" maxlength="40" name="first_name" size="20" type="text" /><br />
+    
+            
+            <input id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" /><br />
+    
+            
+            <input id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" /><br />
+    
+            
+            <textarea placeholder="Description" name="description" rows="10" cols="50"></textarea><br />
+    
+            <input type="submit" value="submit" />
+        </form><br>
+           
+
+    </div>
+</template>

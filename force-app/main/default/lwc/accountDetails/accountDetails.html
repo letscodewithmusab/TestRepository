@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Account Details" icon-name="action:new_account">
+        <div class="slds-m-around_medium">
+            <lightning-record-edit-form
+                object-api-name="Account"
+                onsubmit={handleSubmit}>
+
+                <lightning-layout>
+                    <lightning-layout-item>
+                <lightning-input-field field-name='Name'></lightning-input-field>
+            </lightning-layout-item>
+
+            <lightning-layout-item>
+                <lightning-input-field field-name='Phone'></lightning-input-field>
+            </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout>
+                <lightning-layout-item>
+                <lightning-input-field field-name='Website'></lightning-input-field>
+            </lightning-layout-item>
+            
+            <lightning-layout-item>
+                <lightning-input-field field-name='Rating'></lightning-input-field>
+            </lightning-layout-item>
+        </lightning-layout>
+                
+                <div class="slds-m-top_medium">
+                    <lightning-button variant="brand" type="submit" name="Next" label="Next"></lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

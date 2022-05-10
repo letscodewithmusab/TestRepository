@@ -1,0 +1,250 @@
+<template>
+  <lightning-card title={title} icon-name="custom:custom63">
+    <div class="slds-var-m-around_medium">
+      <p>
+        Please enter information and add documents for your new merchant
+        referral below.
+      </p>
+      <br />
+      <div class="slds-grid slds-wrap slds-gutters slds-box background-section">
+        <div class="slds-col slds-size_1-of-1">
+        <p> 
+          <b>Merchant Information</b>
+        </p>
+      </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Business Name"
+            type="string"
+            value={businessName}
+            class="string-input"
+            onchange={handleBusinessNameChange}
+            required
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Street"
+            type="string"
+            value={address.street}
+            class="string-input"
+            onchange={handleStreetChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="City"
+            type="string"
+            value={address.city}
+            class="string-input"
+            onchange={handleCityChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-combobox
+            label="State"
+            value={address.state}
+            placeholder=""
+            options={stateOptions}
+            onchange={handleStateChange}
+          ></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1">
+          <lightning-input
+            label="Zip"
+            type="number"
+            value={address.postalCode}
+            class="string-input"
+            onchange={handlePostalCodeChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Contact First Name"
+            type="string"
+            value={contactFirstName}
+            class="string-input"
+            onchange={handleContactFirstNameChange}
+            required
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Contact Last Name"
+            type="string"
+            value={contactLastName}
+            class="string-input"
+            onchange={handleContactLastNameChange}
+            required
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Business Phone"
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            value={businessPhone}
+            class="string-input"
+            onchange={handleBusinessPhoneChange}
+            field-level-help="Please enter the phone with dashes ###-###-####"
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Mobile Phone"
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            value={mobilePhone}
+            class="string-input"
+            onchange={handleMobilePhoneChange}
+            field-level-help="Please enter the phone with dashes 123-456-7890"
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Email"
+            type="email"
+            value={email}
+            class="string-input"
+            onchange={handleEmailChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Website"
+            type="url"
+            value={website}
+            class="string-input"
+            onchange={handleWebsiteChange}
+          ></lightning-input>
+        </div>
+      </div>
+      <div class="slds-grid slds-wrap slds-gutters slds-box background-section">
+        <div class="slds-col slds-size_1-of-1">
+          <p> 
+            <b>Partner Information</b>
+          </p>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-combobox
+            label="Branch"
+            value={branch}
+            placeholder=""
+            options={branchOptions}
+            onchange={handleBranchChange}
+            required
+          ></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-combobox
+            label="Campaign"
+            value={campaign}
+            placeholder=""
+            options={campaignOptions}
+            onchange={handleCampaignChange}
+            required
+          ></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Referral Source First Name"
+            type="string"
+            value={referralSourceFirstName}
+            class="string-input"
+            onchange={handleReferralSourceFirstNameChange}
+            required
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Referral Source Last Name"
+            type="string"
+            value={referralSourceLastName}
+            class="string-input"
+            onchange={handleReferralSourceLastNameChange}
+            required
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Referral Source Email"
+            type="email"
+            value={referralSourceEmail}
+            class="string-input"
+            onchange={handleReferralSourceEmailChange}
+            required
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Referral Source Phone"
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            value={referralSourcePhone}
+            class="string-input"
+            onchange={handleReferralSourcePhoneChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-input
+            label="Referral Source ID"
+            type="number"
+            min="0"
+            max="100"
+            value={referralSourceID}
+            class="number-input"
+            onchange={handleReferralSourceIDChange}
+          ></lightning-input>
+        </div>
+        <div class="slds-col slds-size_2-of-2">
+          <lightning-textarea
+            label="Notes"
+            value={notes}
+            class="string-input"
+            onchange={handleNotesChange}
+          ></lightning-textarea>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <lightning-textarea
+            label="Attached File Description"
+            value={fileDescription}
+            class="string-input"
+            onchange={handleAttachedFileDescriptionChange}
+          ></lightning-textarea>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+          <!--add accepted formats and myRecordId AND handle the possible multiple files-->
+          <!-- 
+          file upload     https://developer.salesforce.com/docs/component-library/bundle/lightning-file-upload/documentation
+          
+          To associate an uploaded file to a record, specify the record-id attribute. 
+          -->
+          <lightning-file-upload
+            label="Attach File"
+            name="fileUploader"
+            accept={acceptedFormats}
+            record-id={fileUploadRecordId}
+            onuploadfinished={handleUploadFinished}
+            multiple
+          >
+          </lightning-file-upload>
+        </div>
+      </div>
+      <div>
+        <br />
+        <lightning-button
+          class="slds-var-m-around_medium"
+          label="Submit"
+          variant="brand"
+          onclick={handleSubmitClick}
+        ></lightning-button>
+        <br />
+        <br />
+      </div>
+      <!--p>{message}</p-->
+     <!-- <template if:true={error}>
+        <c-error-panel errors={error}></c-error-panel>
+      </template>-->
+    </div>
+  </lightning-card>
+</template>

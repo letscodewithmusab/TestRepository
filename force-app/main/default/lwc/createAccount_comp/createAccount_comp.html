@@ -1,0 +1,41 @@
+<template>
+<lightning-card  variant="Narrow"  title="Quick Accounts" icon-name="standard:account">
+
+    
+<div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+    <lightning-layout>
+        <lightning-layout-item padding="around-small">
+                <lightning-input type="text"  label="Account Name"  ></lightning-input>
+        </lightning-layout-item>
+
+        <lightning-layout-item padding="around-small">
+            <lightning-input type="date"  label="SLAExpirationDate" ></lightning-input>
+    </lightning-layout-item>  
+    </lightning-layout>
+
+    <lightning-layout>
+        <lightning-layout-item padding="around-small">
+            <lightning-input type="text"  label="Phone" ></lightning-input>
+    </lightning-layout-item>  
+
+        <lightning-layout-item padding="around-small">
+            <lightning-combobox
+            name="progress"
+            label="Rating"
+            value={value}
+            placeholder="Select Rating"
+            options={options}
+            ></lightning-combobox>
+        </lightning-layout-item>
+    </lightning-layout>
+
+    <lightning-layout>
+    <lightning-layout-item padding="around-small">
+        <lightning-button variant="brand" label="Create" onclick={createAccount} title="submit" class="slds-m-left_x-small"></lightning-button>
+</lightning-layout-item>  
+</lightning-layout>
+    
+    </div>
+
+</lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<template>
+<lightning-progress-indicator
+    current-step={currentstep}
+    type="path"
+    variant="circular"
+    padding="around-small"
+>
+<lightning-progress-step
+        label="Account"
+        value="1"
+        onclick={method1}
+    ></lightning-progress-step>
+    <lightning-progress-step
+        label="Contact"
+        value="2"
+        onclick={method2}
+    ></lightning-progress-step>
+    <lightning-progress-step
+        label="Opportunity"
+        value="3"
+        onclick={method3}
+    ></lightning-progress-step>
+</lightning-progress-indicator>
+
+</template>

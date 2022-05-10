@@ -1,0 +1,58 @@
+<template>
+   
+        <lightning-card  variant="Narrow"  title="Techmatrix" icon-name="standard:account">
+            <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+           
+            <div class="slds-m-top_medium slds-m-bottom_x-large">
+                <!-- Default/basic -->
+                <div class="slds-p-around_medium lgc-bg">
+                    <lightning-input type="text" onchange={handleTextChange} label="Employee Name"></lightning-input>
+                    <p>  {textFieldValue} </p> 
+                </div>
+                
+                
+            </div>
+           
+            <lightning-accordion class="example-accordion"
+                                 onsectiontoggle={handleToggleSection}
+                                 active-section-name="B">
+                <lightning-accordion-section name="A" label="Administrator">
+                    <p>Salesforce Administrator Role</p>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="B" label="Developer">
+                    <p>Salesforce Developer Role</p>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="C" label="Business Analyist">
+                    <p>Salesforce Business Analyist</p>
+                </lightning-accordion-section>
+            </lightning-accordion>
+
+        
+       <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+                    <p>Administrator Skill</p>
+                    <lightning-slider label="Volume" value={val}></lightning-slider>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+                    <p>Developer Skill</p>
+                    <lightning-slider label="Volume" value={val2}></lightning-slider>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+                    <p>Business Analyist Skill</p>
+                    <lightning-slider label="Volume" value={val3}></lightning-slider>
+                </div>
+            </lightning-layout-item>
+    
+        </lightning-layout>
+    </div>
+        </lightning-card>
+    
+</template>

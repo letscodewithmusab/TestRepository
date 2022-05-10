@@ -1,0 +1,64 @@
+<template>
+    <lightning-card>
+        
+      <c-progress-bar oneventa={func1} oneventb={func2} oneventc={func3} currentstep={currentstepvalue}></c-progress-bar> 
+    
+
+            <div class="stepOne">
+                
+            <c-account-form>/</c-account-form>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+             <div style="margin-left:325px;">      
+            <lightning-button
+            class="slds-m-top_small"
+            label="Next"
+            variant="brand"
+            onclick={goToStepTwo}
+            
+        ></lightning-button></div> 
+    </lightning-layout-item>
+    </lightning-layout>
+        </div>
+        
+            <div class="stepTwo slds-hide">
+            <c-contact-form>/</c-contact-form>
+            <div style="margin-left:250px;">
+            <lightning-button
+            class="slds-m-top_small"
+            label="Previous"
+            onclick={goBackToStepOne}
+        ></lightning-button>
+    
+            <lightning-button
+            class="slds-m-top_small"
+            label="Next"
+            variant="brand"
+            onclick={goToStepThree}
+        ></lightning-button>
+            </div>
+        </div>
+    
+
+        <div class="stepThree slds-hide">
+            <c-opportunity-form>/</c-opportunity-form>
+            <div style="margin-left:250px;">
+            <lightning-button
+            class="slds-m-top_small"
+            label="Previous"
+            onclick={goBackToStepTwo}
+        ></lightning-button>
+  
+        <lightning-button
+            class="slds-m-top_small"
+            label="Save"
+            type="submit"
+            variant="brand"
+            onclick={handleClick}
+        ></lightning-button>
+    </div>
+    
+        </div>
+    
+    </lightning-card>
+</template>

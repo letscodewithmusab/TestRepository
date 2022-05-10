@@ -1,0 +1,59 @@
+h1{
+
+    font-family:Serif;
+    font-size:40px;
+    text-align:center;
+    margin-top:40px;
+    color:green;
+}
+
+.div{
+
+    display:inline-flex;
+}
+.container{
+
+    
+    width:80%;
+    margin-left:200px;
+    margin-top:50px;
+    
+}
+
+.div_a{
+    margin-left:10px;
+    margin-top:0px;
+}
+
+   
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
+  li {
+    display: inline;
+    
+    margin-left:40px;
+    font-family: cursive;
+    font-size: 20px;
+  }
+
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited{
+    color: black;
+  }
+
+  a:hover{
+    color: rgb(23, 151, 11);
+    text-decoration: underline;
+  }
