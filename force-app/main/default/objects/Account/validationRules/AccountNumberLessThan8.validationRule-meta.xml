@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountNumberLessThan8</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( LEN( AccountNumber ) &gt; 8,LEN( AccountNumber ) &lt; 8)</errorConditionFormula>
+    <errorDisplayField>AccountNumber</errorDisplayField>
+    <errorMessage>Account must be in 8 digit</errorMessage>
+</ValidationRule>
